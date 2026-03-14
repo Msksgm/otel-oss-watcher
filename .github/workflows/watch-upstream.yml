@@ -4,6 +4,12 @@ on:
   schedule:
     - cron: "0 * * * *"
   workflow_dispatch:
+    inputs:
+      hours_back:
+        description: "何時間前まで遡るか（指定時はキャッシュより優先）"
+        required: false
+        type: number
+        default: 0
 
 jobs:
   check-upstream:
@@ -23,8 +29,11 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
-          # 前回チェック時刻を取得（なければ1時間前）
-          if [ -f last_checked.txt ]; then
+          # hours_back が指定されていればキャッシュより優先
+          HOURS_BACK="${{ inputs.hours_back }}"
+          if [ -n "$HOURS_BACK" ] && [ "$HOURS_BACK" -gt 0 ] 2>/dev/null; then
+            SINCE=$(date -u -d "$HOURS_BACK hours ago" +%Y-%m-%dT%H:%M:%SZ)
+          elif [ -f last_checked.txt ]; then
             SINCE=$(cat last_checked.txt)
           else
             SINCE=$(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%SZ)
