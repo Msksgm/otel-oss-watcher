@@ -75,10 +75,10 @@ jobs:
 
               if [ -n "$IS_PR" ]; then
                 TYPE="PR"
-                EMOJI=":merge:"
+                EMOJI=":wrench:"
               else
                 TYPE="Issue"
-                EMOJI=":issue:"
+                EMOJI=":ticket:"
               fi
 
               if [ "$CREATED_AT" \>= "$SINCE" ]; then
