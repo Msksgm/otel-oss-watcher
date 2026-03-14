@@ -1,0 +1,89 @@
+name: Watch Upstream
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+jobs:
+  check-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Restore last checked timestamp
+        id: cache-timestamp
+        uses: actions/cache/restore@v4
+        with:
+          path: last_checked.txt
+          key: last-checked-timestamp
+
+      - name: Check and notify
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        run: |
+          # 前回チェック時刻を取得（なければ1時間前）
+          if [ -f last_checked.txt ]; then
+            SINCE=$(cat last_checked.txt)
+          else
+            SINCE=$(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%SZ)
+          fi
+          echo "Checking since: $SINCE"
+
+          # repos.yaml のエントリ数を取得
+          REPO_COUNT=$(yq '.repos | length' repos.yaml)
+
+          for i in $(seq 0 $((REPO_COUNT - 1))); do
+            REPO_NAME=$(yq ".repos[$i].name" repos.yaml)
+            WATCH_ISSUES=$(yq ".repos[$i].issues" repos.yaml)
+            WATCH_PULLS=$(yq ".repos[$i].pulls" repos.yaml)
+
+            echo "--- Checking $REPO_NAME (issues=$WATCH_ISSUES, pulls=$WATCH_PULLS) ---"
+
+            # GitHub API で issue/PR を取得
+            ITEMS=$(gh api "repos/$REPO_NAME/issues?since=$SINCE&state=all&sort=created&direction=desc&per_page=100" \
+              --jq '.[] | select(.created_at >= "'"$SINCE"'")' 2>/dev/null || true)
+
+            [ -z "$ITEMS" ] && continue
+
+            echo "$ITEMS" | jq -c '.' | while read -r item; do
+              IS_PR=$(echo "$item" | jq -r '.pull_request // empty')
+
+              # 設定に応じてフィルタ
+              if [ -n "$IS_PR" ] && [ "$WATCH_PULLS" != "true" ]; then
+                continue
+              fi
+              if [ -z "$IS_PR" ] && [ "$WATCH_ISSUES" != "true" ]; then
+                continue
+              fi
+
+              TITLE=$(echo "$item" | jq -r '.title')
+              URL=$(echo "$item" | jq -r '.html_url')
+              NUMBER=$(echo "$item" | jq -r '.number')
+              USER=$(echo "$item" | jq -r '.user.login')
+
+              if [ -n "$IS_PR" ]; then
+                TYPE="PR"
+                EMOJI=":merge:"
+              else
+                TYPE="Issue"
+                EMOJI=":issue:"
+              fi
+
+              curl -s -X POST "$SLACK_WEBHOOK_URL" \
+                -H 'Content-Type: application/json' \
+                -d "{
+                  \"text\": \"$EMOJI *New $TYPE* in \`$REPO_NAME\`\n#$NUMBER: <$URL|$TITLE>\nby $USER\"
+                }"
+            done
+          done
+
+          # 現在時刻を保存
+          date -u +%Y-%m-%dT%H:%M:%SZ > last_checked.txt
+
+      - name: Save timestamp
+        uses: actions/cache/save@v4
+        with:
+          path: last_checked.txt
+          key: last-checked-timestamp-${{ github.run_id }}
