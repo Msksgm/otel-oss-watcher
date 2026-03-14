@@ -52,7 +52,7 @@ jobs:
 
             # GitHub API で issue/PR を取得
             ITEMS=$(gh api "repos/$REPO_NAME/issues?since=$SINCE&state=all&sort=created&direction=desc&per_page=100" \
-              --jq '.[] | select(.created_at >= "'"$SINCE"'")' 2>/dev/null || true)
+              --jq '.[] | select(.updated_at >= "'"$SINCE"'")' 2>/dev/null || true)
 
             [ -z "$ITEMS" ] && continue
 
@@ -71,6 +71,7 @@ jobs:
               URL=$(echo "$item" | jq -r '.html_url')
               NUMBER=$(echo "$item" | jq -r '.number')
               USER=$(echo "$item" | jq -r '.user.login')
+              CREATED_AT=$(echo "$item" | jq -r '.created_at')
 
               if [ -n "$IS_PR" ]; then
                 TYPE="PR"
@@ -80,10 +81,16 @@ jobs:
                 EMOJI=":issue:"
               fi
 
+              if [ "$CREATED_AT" \>= "$SINCE" ]; then
+                ACTION="New"
+              else
+                ACTION="Updated"
+              fi
+
               curl -s -X POST "$SLACK_WEBHOOK_URL" \
                 -H 'Content-Type: application/json' \
                 -d "{
-                  \"text\": \"$EMOJI *New $TYPE* in \`$REPO_NAME\`\n#$NUMBER: <$URL|$TITLE>\nby $USER\"
+                  \"text\": \"$EMOJI *$ACTION $TYPE* in \`$REPO_NAME\`\n#$NUMBER: <$URL|$TITLE>\nby $USER\"
                 }"
             done
           done
