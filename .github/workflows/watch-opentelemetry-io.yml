@@ -43,7 +43,7 @@ jobs:
           echo "Checking since: $SINCE"
 
           # GitHub API で ja ラベル付きの issue/PR を取得
-          ITEMS=$(gh api "repos/$REPO_NAME/issues?labels=ja&since=$SINCE&state=all&sort=created&direction=desc&per_page=100" \
+          ITEMS=$(gh api "repos/$REPO_NAME/issues?labels=lang:ja&since=$SINCE&state=all&sort=updated&direction=desc&per_page=100" \
             --jq '.[] | select(.updated_at >= "'"$SINCE"'")' 2>/dev/null || true)
 
           if [ -n "$ITEMS" ]; then
@@ -72,7 +72,7 @@ jobs:
               curl -s -X POST "$SLACK_WEBHOOK_URL" \
                 -H 'Content-Type: application/json' \
                 -d "{
-                  \"text\": \"$EMOJI *$ACTION $TYPE* in \`$REPO_NAME\` (label: ja)\n#$NUMBER: <$URL|$TITLE>\nby $USER\"
+                  \"text\": \"$EMOJI *$ACTION $TYPE* in \`$REPO_NAME\` (label: lang:ja)\n#$NUMBER: <$URL|$TITLE>\nby $USER\"
                 }"
 
               # 各 issue/PR の新規コメントを検出
@@ -88,7 +88,7 @@ jobs:
                   curl -s -X POST "$SLACK_WEBHOOK_URL" \
                     -H 'Content-Type: application/json' \
                     -d "{
-                      \"text\": \":speech_balloon: *New Comment* on $TYPE #$NUMBER in \`$REPO_NAME\` (label: ja)\n<$COMMENT_URL|$TITLE>\nby $COMMENT_USER:\n> $(echo "$COMMENT_BODY" | sed 's/"/\\"/g' | tr '\n' ' ')\"
+                      \"text\": \":speech_balloon: *New Comment* on $TYPE #$NUMBER in \`$REPO_NAME\` (label: lang:ja)\n<$COMMENT_URL|$TITLE>\nby $COMMENT_USER:\n> $(echo "$COMMENT_BODY" | sed 's/"/\\"/g' | tr '\n' ' ')\"
                     }"
                 done
               fi

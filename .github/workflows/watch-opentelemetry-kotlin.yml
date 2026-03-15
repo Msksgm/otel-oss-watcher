@@ -43,7 +43,7 @@ jobs:
           echo "Checking since: $SINCE"
 
           # GitHub API で issue/PR を取得
-          ITEMS=$(gh api "repos/$REPO_NAME/issues?since=$SINCE&state=all&sort=created&direction=desc&per_page=100" \
+          ITEMS=$(gh api "repos/$REPO_NAME/issues?since=$SINCE&state=all&sort=updated&direction=desc&per_page=100" \
             --jq '.[] | select(.updated_at >= "'"$SINCE"'")' 2>/dev/null || true)
 
           if [ -n "$ITEMS" ]; then
