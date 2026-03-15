@@ -1,4 +1,0 @@
-repos:
-  - name: open-telemetry/opentelemetry-kotlin
-    issues: true
-    pulls: true

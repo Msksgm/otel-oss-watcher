@@ -1,4 +1,4 @@
-name: Watch Upstream
+name: Watch opentelemetry-kotlin
 
 on:
   schedule:
@@ -22,13 +22,15 @@ jobs:
         uses: actions/cache/restore@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
         with:
           path: last_checked.txt
-          key: last-checked-timestamp
+          key: last-checked-timestamp-kotlin
 
       - name: Check and notify
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
         run: |
+          REPO_NAME="open-telemetry/opentelemetry-kotlin"
+
           # hours_back が指定されていればキャッシュより優先
           HOURS_BACK="${{ inputs.hours_back }}"
           if [ -n "$HOURS_BACK" ] && [ "$HOURS_BACK" -gt 0 ] 2>/dev/null; then
@@ -40,33 +42,13 @@ jobs:
           fi
           echo "Checking since: $SINCE"
 
-          # repos.yaml のエントリ数を取得
-          REPO_COUNT=$(yq '.repos | length' repos.yaml)
+          # GitHub API で issue/PR を取得
+          ITEMS=$(gh api "repos/$REPO_NAME/issues?since=$SINCE&state=all&sort=created&direction=desc&per_page=100" \
+            --jq '.[] | select(.updated_at >= "'"$SINCE"'")' 2>/dev/null || true)
 
-          for i in $(seq 0 $((REPO_COUNT - 1))); do
-            REPO_NAME=$(yq ".repos[$i].name" repos.yaml)
-            WATCH_ISSUES=$(yq ".repos[$i].issues" repos.yaml)
-            WATCH_PULLS=$(yq ".repos[$i].pulls" repos.yaml)
-
-            echo "--- Checking $REPO_NAME (issues=$WATCH_ISSUES, pulls=$WATCH_PULLS) ---"
-
-            # GitHub API で issue/PR を取得
-            ITEMS=$(gh api "repos/$REPO_NAME/issues?since=$SINCE&state=all&sort=created&direction=desc&per_page=100" \
-              --jq '.[] | select(.updated_at >= "'"$SINCE"'")' 2>/dev/null || true)
-
-            [ -z "$ITEMS" ] && continue
-
+          if [ -n "$ITEMS" ]; then
             echo "$ITEMS" | jq -c '.' | while read -r item; do
               IS_PR=$(echo "$item" | jq -r '.pull_request // empty')
-
-              # 設定に応じてフィルタ
-              if [ -n "$IS_PR" ] && [ "$WATCH_PULLS" != "true" ]; then
-                continue
-              fi
-              if [ -z "$IS_PR" ] && [ "$WATCH_ISSUES" != "true" ]; then
-                continue
-              fi
-
               TITLE=$(echo "$item" | jq -r '.title')
               URL=$(echo "$item" | jq -r '.html_url')
               NUMBER=$(echo "$item" | jq -r '.number')
@@ -92,8 +74,26 @@ jobs:
                 -d "{
                   \"text\": \"$EMOJI *$ACTION $TYPE* in \`$REPO_NAME\`\n#$NUMBER: <$URL|$TITLE>\nby $USER\"
                 }"
+
+              # 各 issue/PR の新規コメントを検出
+              COMMENTS=$(gh api "repos/$REPO_NAME/issues/$NUMBER/comments?since=$SINCE&per_page=100" \
+                --jq '.[] | select(.created_at >= "'"$SINCE"'")' 2>/dev/null || true)
+
+              if [ -n "$COMMENTS" ]; then
+                echo "$COMMENTS" | jq -c '.' | while read -r comment; do
+                  COMMENT_USER=$(echo "$comment" | jq -r '.user.login')
+                  COMMENT_BODY=$(echo "$comment" | jq -r '.body' | head -c 200)
+                  COMMENT_URL=$(echo "$comment" | jq -r '.html_url')
+
+                  curl -s -X POST "$SLACK_WEBHOOK_URL" \
+                    -H 'Content-Type: application/json' \
+                    -d "{
+                      \"text\": \":speech_balloon: *New Comment* on $TYPE #$NUMBER in \`$REPO_NAME\`\n<$COMMENT_URL|$TITLE>\nby $COMMENT_USER:\n> $(echo "$COMMENT_BODY" | sed 's/"/\\"/g' | tr '\n' ' ')\"
+                    }"
+                done
+              fi
             done
-          done
+          fi
 
           # 現在時刻を保存
           date -u +%Y-%m-%dT%H:%M:%SZ > last_checked.txt
@@ -102,4 +102,4 @@ jobs:
         uses: actions/cache/save@cdf6c1fa76f9f475f3d7449005a359c84ca0f306 # v5.0.3
         with:
           path: last_checked.txt
-          key: last-checked-timestamp-${{ github.run_id }}
+          key: last-checked-timestamp-kotlin-${{ github.run_id }}

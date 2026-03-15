@@ -1,0 +1,105 @@
+name: Watch opentelemetry.io
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+    inputs:
+      hours_back:
+        description: "何時間前まで遡るか（指定時はキャッシュより優先）"
+        required: false
+        type: number
+        default: 0
+
+jobs:
+  check-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - name: Restore last checked timestamp
+        id: cache-timestamp
+        uses: actions/cache/restore@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: last_checked.txt
+          key: last-checked-timestamp-otel-io
+
+      - name: Check and notify
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_OTEL_IO }}
+        run: |
+          REPO_NAME="open-telemetry/opentelemetry.io"
+
+          # hours_back が指定されていればキャッシュより優先
+          HOURS_BACK="${{ inputs.hours_back }}"
+          if [ -n "$HOURS_BACK" ] && [ "$HOURS_BACK" -gt 0 ] 2>/dev/null; then
+            SINCE=$(date -u -d "$HOURS_BACK hours ago" +%Y-%m-%dT%H:%M:%SZ)
+          elif [ -f last_checked.txt ]; then
+            SINCE=$(cat last_checked.txt)
+          else
+            SINCE=$(date -u -d '1 hour ago' +%Y-%m-%dT%H:%M:%SZ)
+          fi
+          echo "Checking since: $SINCE"
+
+          # GitHub API で ja ラベル付きの issue/PR を取得
+          ITEMS=$(gh api "repos/$REPO_NAME/issues?labels=ja&since=$SINCE&state=all&sort=created&direction=desc&per_page=100" \
+            --jq '.[] | select(.updated_at >= "'"$SINCE"'")' 2>/dev/null || true)
+
+          if [ -n "$ITEMS" ]; then
+            echo "$ITEMS" | jq -c '.' | while read -r item; do
+              IS_PR=$(echo "$item" | jq -r '.pull_request // empty')
+              TITLE=$(echo "$item" | jq -r '.title')
+              URL=$(echo "$item" | jq -r '.html_url')
+              NUMBER=$(echo "$item" | jq -r '.number')
+              USER=$(echo "$item" | jq -r '.user.login')
+              CREATED_AT=$(echo "$item" | jq -r '.created_at')
+
+              if [ -n "$IS_PR" ]; then
+                TYPE="PR"
+                EMOJI=":wrench:"
+              else
+                TYPE="Issue"
+                EMOJI=":ticket:"
+              fi
+
+              if [ "$CREATED_AT" \>= "$SINCE" ]; then
+                ACTION="New"
+              else
+                ACTION="Updated"
+              fi
+
+              curl -s -X POST "$SLACK_WEBHOOK_URL" \
+                -H 'Content-Type: application/json' \
+                -d "{
+                  \"text\": \"$EMOJI *$ACTION $TYPE* in \`$REPO_NAME\` (label: ja)\n#$NUMBER: <$URL|$TITLE>\nby $USER\"
+                }"
+
+              # 各 issue/PR の新規コメントを検出
+              COMMENTS=$(gh api "repos/$REPO_NAME/issues/$NUMBER/comments?since=$SINCE&per_page=100" \
+                --jq '.[] | select(.created_at >= "'"$SINCE"'")' 2>/dev/null || true)
+
+              if [ -n "$COMMENTS" ]; then
+                echo "$COMMENTS" | jq -c '.' | while read -r comment; do
+                  COMMENT_USER=$(echo "$comment" | jq -r '.user.login')
+                  COMMENT_BODY=$(echo "$comment" | jq -r '.body' | head -c 200)
+                  COMMENT_URL=$(echo "$comment" | jq -r '.html_url')
+
+                  curl -s -X POST "$SLACK_WEBHOOK_URL" \
+                    -H 'Content-Type: application/json' \
+                    -d "{
+                      \"text\": \":speech_balloon: *New Comment* on $TYPE #$NUMBER in \`$REPO_NAME\` (label: ja)\n<$COMMENT_URL|$TITLE>\nby $COMMENT_USER:\n> $(echo "$COMMENT_BODY" | sed 's/"/\\"/g' | tr '\n' ' ')\"
+                    }"
+                done
+              fi
+            done
+          fi
+
+          # 現在時刻を保存
+          date -u +%Y-%m-%dT%H:%M:%SZ > last_checked.txt
+
+      - name: Save timestamp
+        uses: actions/cache/save@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: last_checked.txt
+          key: last-checked-timestamp-otel-io-${{ github.run_id }}
