@@ -1,0 +1,37 @@
+name: Detect i18n status
+on:
+  schedule:
+    - cron: "0 0 * * *" # 毎日 00:00 UTC (09:00 JST)
+  workflow_dispatch: # 手動実行
+
+jobs:
+  detect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - name: Run detection script
+        run: bash scripts/detect-i18n-status.sh
+
+      - name: Commit and push if changed
+        run: |
+          git add reports/
+          git diff --cached --quiet reports/ && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: update i18n status reports"
+          git push
+
+      - name: Notify Slack
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL_OTEL_IO }}
+        run: |
+          UNTRANSLATED_COUNT=$(wc -l < reports/untranslated-pages.txt | tr -d ' ')
+          DRIFTED_COUNT=$(wc -l < reports/drifted-pages.txt | tr -d ' ')
+          curl -s -X POST "$SLACK_WEBHOOK_URL" \
+            -H 'Content-Type: application/json' \
+            -d "{
+              \"text\": \":globe_with_meridians: *opentelemetry.io i18n status*\n未翻訳ページ: ${UNTRANSLATED_COUNT} 件\ndrifted ページ: ${DRIFTED_COUNT} 件\"
+            }"
