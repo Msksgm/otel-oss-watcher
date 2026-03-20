@@ -18,6 +18,10 @@ content/en/docs/collector/deploy/choose.md
 content/en/docs/collector/deploy/other/agent-to-gateway.md
 content/en/docs/collector/extend/custom-component/connector/index.md
 content/en/docs/collector/extend/custom-component/receiver.md
+content/en/docs/compatibility/_index.md
+content/en/docs/compatibility/migration/_index.md
+content/en/docs/compatibility/migration/opencensus.md
+content/en/docs/compatibility/migration/opentracing.md
 content/en/docs/concepts/signals/profiles.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
 content/en/docs/demo/screenshots/index.md
@@ -160,9 +164,6 @@ content/en/docs/languages/swift/getting-started.md
 content/en/docs/languages/swift/instrumentation.md
 content/en/docs/languages/swift/libraries.md
 content/en/docs/languages/swift/registry.md
-content/en/docs/migration/_index.md
-content/en/docs/migration/opencensus.md
-content/en/docs/migration/opentracing.md
 content/en/docs/platforms/client-apps/android.md
 content/en/docs/platforms/client-apps/ios/_index.md
 content/en/docs/platforms/client-apps/web/_index.md
