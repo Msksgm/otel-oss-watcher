@@ -134,7 +134,6 @@ content/en/docs/languages/php/propagation.md
 content/en/docs/languages/php/registry.md
 content/en/docs/languages/php/resources.md
 content/en/docs/languages/php/sdk.md
-content/en/docs/languages/python/_index.md
 content/en/docs/languages/python/api.md
 content/en/docs/languages/python/benchmarks.md
 content/en/docs/languages/python/cookbook.md

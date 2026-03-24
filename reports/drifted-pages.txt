@@ -65,11 +65,7 @@ content/ja/docs/languages/go/instrumentation.md
 content/ja/docs/languages/go/sampling.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/api.md
-content/ja/docs/languages/java/configuration.md
-content/ja/docs/languages/java/getting-started.md
 content/ja/docs/languages/java/instrumentation.md
-content/ja/docs/languages/java/intro.md
-content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/_includes/browser-instrumentation-warning.md
 content/ja/docs/languages/js/_index.md
 content/ja/docs/languages/js/benchmarks.md
