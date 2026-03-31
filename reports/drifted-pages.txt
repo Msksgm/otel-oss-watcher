@@ -5,7 +5,6 @@ content/ja/blog/2025/declarative-config.md
 content/ja/blog/_index.md
 content/ja/docs/_includes/exporters/intro.md
 content/ja/docs/collector/_index.md
-content/ja/docs/collector/architecture.md
 content/ja/docs/collector/components/connector.md
 content/ja/docs/collector/components/exporter.md
 content/ja/docs/collector/components/extension.md

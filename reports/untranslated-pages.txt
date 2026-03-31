@@ -22,7 +22,6 @@ content/en/docs/compatibility/_index.md
 content/en/docs/compatibility/migration/_index.md
 content/en/docs/compatibility/migration/opencensus.md
 content/en/docs/compatibility/migration/opentracing.md
-content/en/docs/concepts/signals/profiles.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
 content/en/docs/demo/screenshots/index.md
 content/en/docs/demo/services/accounting.md
@@ -140,7 +139,6 @@ content/en/docs/languages/python/cookbook.md
 content/en/docs/languages/python/distro.md
 content/en/docs/languages/python/examples.md
 content/en/docs/languages/python/exporters.md
-content/en/docs/languages/python/getting-started.md
 content/en/docs/languages/python/instrumentation.md
 content/en/docs/languages/python/libraries.md
 content/en/docs/languages/python/mypy.md
