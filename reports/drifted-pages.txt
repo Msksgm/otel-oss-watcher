@@ -76,7 +76,6 @@ content/ja/docs/languages/js/libraries.md
 content/ja/docs/languages/js/propagation.md
 content/ja/docs/languages/js/resources.md
 content/ja/docs/languages/js/serverless.md
-content/ja/docs/languages/python/getting-started.md
 content/ja/docs/languages/ruby/_index.md
 content/ja/docs/languages/ruby/getting-started.md
 content/ja/docs/languages/ruby/instrumentation.md
