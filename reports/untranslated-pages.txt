@@ -3,6 +3,7 @@ content/en/_includes/page-not-translated-msg.md
 content/en/announcements/kubecon-asia.md
 content/en/announcements/kubecon-china.md
 content/en/announcements/kubecon-eu.md
+content/en/announcements/kubecon-india.md
 content/en/announcements/open-observability-summit-na.md
 content/en/announcements/otel-unplugged.md
 content/en/api.md
@@ -50,6 +51,9 @@ content/en/docs/demo/telemetry-features/manual-span-attributes.md
 content/en/docs/demo/telemetry-features/metric-coverage.md
 content/en/docs/demo/telemetry-features/trace-coverage.md
 content/en/docs/getting-started/reference-application-specification.md
+content/en/docs/guidance/_index.md
+content/en/docs/guidance/blueprints/_index.md
+content/en/docs/guidance/reference-implementations/_index.md
 content/en/docs/languages/cpp/_index.md
 content/en/docs/languages/cpp/api.md
 content/en/docs/languages/cpp/examples.md

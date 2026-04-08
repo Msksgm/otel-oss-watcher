@@ -1,7 +1,9 @@
 content/ja/_includes/otel-does-not-validate-3rd-pty-distros.md
 content/ja/_index.md
+content/ja/announcements/kubecon-japan.md
 content/ja/blog/2025/ai-agent-observability/index.md
 content/ja/blog/2025/declarative-config.md
+content/ja/blog/2025/kubecon-japan.md
 content/ja/blog/_index.md
 content/ja/docs/_includes/exporters/intro.md
 content/ja/docs/collector/_index.md
