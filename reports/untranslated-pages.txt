@@ -236,5 +236,8 @@ content/en/site/build/content-module-patches.md
 content/en/site/build/localization/_index.md
 content/en/site/build/npm-scripts.md
 content/en/site/build/scripts.md
+content/en/site/design/_index.md
+content/en/site/design/agent-support.md
+content/en/site/features.md
 content/en/status.md
 content/en/training/index.md
