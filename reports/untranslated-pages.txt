@@ -239,5 +239,9 @@ content/en/site/build/scripts.md
 content/en/site/design/_index.md
 content/en/site/design/agent-support.md
 content/en/site/features.md
+content/en/site/testing/_index.md
+content/en/site/testing/tests/_index.md
+content/en/site/testing/tests/no-md.md
+content/en/site/testing/tests/regular.md
 content/en/status.md
 content/en/training/index.md
