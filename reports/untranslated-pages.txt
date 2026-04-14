@@ -16,7 +16,8 @@ content/en/community/events.md
 content/en/community/marketing-guidelines.md
 content/en/community/members.md
 content/en/docs/collector/deploy/choose.md
-content/en/docs/collector/deploy/other/agent-to-gateway.md
+content/en/docs/collector/deploy/gateway.md
+content/en/docs/collector/deploy/other/agent-to-gateway/_index.md
 content/en/docs/collector/extend/custom-component/connector/index.md
 content/en/docs/collector/extend/custom-component/receiver.md
 content/en/docs/compatibility/_index.md
@@ -24,6 +25,8 @@ content/en/docs/compatibility/migration/_index.md
 content/en/docs/compatibility/migration/opencensus.md
 content/en/docs/compatibility/migration/opentracing.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
+content/en/docs/demo/sample-configurations/_index.md
+content/en/docs/demo/sample-configurations/tail-sampling-service-criticality.md
 content/en/docs/demo/screenshots/index.md
 content/en/docs/demo/services/accounting.md
 content/en/docs/demo/services/ad.md

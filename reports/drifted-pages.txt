@@ -15,7 +15,6 @@ content/ja/docs/collector/components/receiver.md
 content/ja/docs/collector/configuration.md
 content/ja/docs/collector/deploy/_index.md
 content/ja/docs/collector/deploy/agent.md
-content/ja/docs/collector/deploy/gateway/index.md
 content/ja/docs/collector/deploy/other/no-collector.md
 content/ja/docs/collector/distributions.md
 content/ja/docs/collector/extend/custom-component/_index.md
@@ -37,7 +36,6 @@ content/ja/docs/concepts/observability-primer.md
 content/ja/docs/concepts/resources/index.md
 content/ja/docs/concepts/signals/_index.md
 content/ja/docs/concepts/signals/baggage.md
-content/ja/docs/concepts/signals/logs.md
 content/ja/docs/concepts/signals/traces.md
 content/ja/docs/contributing/_index.md
 content/ja/docs/contributing/acknowledgements.md
@@ -66,6 +64,7 @@ content/ja/docs/languages/go/instrumentation.md
 content/ja/docs/languages/go/sampling.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/api.md
+content/ja/docs/languages/java/getting-started.md
 content/ja/docs/languages/java/instrumentation.md
 content/ja/docs/languages/js/_includes/browser-instrumentation-warning.md
 content/ja/docs/languages/js/_index.md
