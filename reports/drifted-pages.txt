@@ -26,6 +26,7 @@ content/ja/docs/collector/install/binary/macos.md
 content/ja/docs/collector/install/binary/windows.md
 content/ja/docs/collector/install/docker.md
 content/ja/docs/collector/install/kubernetes.md
+content/ja/docs/collector/internal-telemetry.md
 content/ja/docs/collector/management.md
 content/ja/docs/collector/quick-start.md
 content/ja/docs/collector/troubleshooting.md
