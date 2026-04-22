@@ -71,6 +71,7 @@ content/ja/docs/languages/js/_includes/browser-instrumentation-warning.md
 content/ja/docs/languages/js/_index.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/languages/js/context.md
+content/ja/docs/languages/js/getting-started/_index.md
 content/ja/docs/languages/js/getting-started/browser.md
 content/ja/docs/languages/js/getting-started/nodejs.md
 content/ja/docs/languages/js/instrumentation.md
