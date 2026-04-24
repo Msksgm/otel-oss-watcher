@@ -192,6 +192,8 @@ content/en/docs/zero-code/java/agent/instrumentation/http.md
 content/en/docs/zero-code/java/agent/performance.md
 content/en/docs/zero-code/java/agent/server-config.md
 content/en/docs/zero-code/java/agent/supported-libraries.md
+content/en/docs/zero-code/java/spring-boot-starter/declarative-configuration.md
+content/en/docs/zero-code/java/spring-boot-starter/programmatic-configuration.md
 content/en/docs/zero-code/java/spring-boot-starter/sdk-configuration.md
 content/en/docs/zero-code/obi/cardinality/index.md
 content/en/docs/zero-code/obi/cilium-compatibility.md
@@ -243,7 +245,8 @@ content/en/site/build/scripts.md
 content/en/site/design/_index.md
 content/en/site/design/agent-support.md
 content/en/site/features.md
-content/en/site/skills.md
+content/en/site/skills/_index.md
+content/en/site/skills/refresh-refcache-pr-fix.md
 content/en/site/testing/_index.md
 content/en/site/testing/tests/_index.md
 content/en/site/testing/tests/no-md.md

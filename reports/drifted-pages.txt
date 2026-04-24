@@ -1,5 +1,6 @@
 content/ja/_includes/otel-does-not-validate-3rd-pty-distros.md
 content/ja/_index.md
+content/ja/announcements/_index.md
 content/ja/announcements/kubecon-japan.md
 content/ja/blog/2025/ai-agent-observability/index.md
 content/ja/blog/2025/declarative-config.md
@@ -109,9 +110,12 @@ content/ja/docs/zero-code/_index.md
 content/ja/docs/zero-code/java/_index.md
 content/ja/docs/zero-code/java/agent/getting-started.md
 content/ja/docs/zero-code/java/quarkus.md
+content/ja/docs/zero-code/java/spring-boot-starter/_index.md
+content/ja/docs/zero-code/java/spring-boot-starter/additional-instrumentations.md
 content/ja/docs/zero-code/java/spring-boot-starter/annotations.md
 content/ja/docs/zero-code/java/spring-boot-starter/api.md
 content/ja/docs/zero-code/java/spring-boot-starter/getting-started.md
+content/ja/docs/zero-code/java/spring-boot-starter/other-spring-autoconfig.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/js/_index.md
 content/ja/docs/zero-code/js/configuration.md
