@@ -24,7 +24,8 @@ content/en/docs/compatibility/_index.md
 content/en/docs/compatibility/migration/_index.md
 content/en/docs/compatibility/migration/opencensus.md
 content/en/docs/compatibility/migration/opentracing.md
-content/en/docs/compatibility/prometheus.md
+content/en/docs/compatibility/prometheus/_index.md
+content/en/docs/compatibility/prometheus/prometheus-clients.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
 content/en/docs/demo/sample-configurations/_index.md
 content/en/docs/demo/sample-configurations/tail-sampling-service-criticality.md
