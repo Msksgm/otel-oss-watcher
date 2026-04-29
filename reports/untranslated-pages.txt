@@ -92,6 +92,7 @@ content/en/docs/languages/dotnet/metrics/instruments.md
 content/en/docs/languages/dotnet/netframework.md
 content/en/docs/languages/dotnet/registry.md
 content/en/docs/languages/dotnet/resources.md
+content/en/docs/languages/dotnet/sampling.md
 content/en/docs/languages/dotnet/shim.md
 content/en/docs/languages/dotnet/traces-api.md
 content/en/docs/languages/dotnet/traces/_index.md
