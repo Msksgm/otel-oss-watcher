@@ -26,6 +26,7 @@ content/en/docs/compatibility/migration/opencensus.md
 content/en/docs/compatibility/migration/opentracing.md
 content/en/docs/compatibility/prometheus/_index.md
 content/en/docs/compatibility/prometheus/client-libraries.md
+content/en/docs/compatibility/prometheus/otlp-metrics-export.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
 content/en/docs/demo/sample-configurations/_index.md
 content/en/docs/demo/sample-configurations/tail-sampling-service-criticality.md
@@ -59,6 +60,9 @@ content/en/docs/getting-started/reference-application-specification.md
 content/en/docs/guidance/_index.md
 content/en/docs/guidance/blueprints/_index.md
 content/en/docs/guidance/reference-implementations/_index.md
+content/en/docs/guidance/reference-implementations/adobe/index.md
+content/en/docs/guidance/reference-implementations/mastodon/index.md
+content/en/docs/guidance/reference-implementations/skyscanner/index.md
 content/en/docs/languages/cpp/_index.md
 content/en/docs/languages/cpp/api.md
 content/en/docs/languages/cpp/examples.md
