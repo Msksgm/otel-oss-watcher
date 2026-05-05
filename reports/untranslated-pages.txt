@@ -57,9 +57,6 @@ content/en/docs/demo/telemetry-features/manual-span-attributes.md
 content/en/docs/demo/telemetry-features/metric-coverage.md
 content/en/docs/demo/telemetry-features/trace-coverage.md
 content/en/docs/getting-started/reference-application-specification.md
-content/en/docs/guidance/_index.md
-content/en/docs/guidance/blueprints/_index.md
-content/en/docs/guidance/reference-implementations/_index.md
 content/en/docs/guidance/reference-implementations/adobe/index.md
 content/en/docs/guidance/reference-implementations/mastodon/index.md
 content/en/docs/guidance/reference-implementations/skyscanner/index.md

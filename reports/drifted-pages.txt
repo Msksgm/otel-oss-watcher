@@ -40,7 +40,6 @@ content/ja/docs/concepts/signals/_index.md
 content/ja/docs/concepts/signals/baggage.md
 content/ja/docs/concepts/signals/traces.md
 content/ja/docs/contributing/_index.md
-content/ja/docs/contributing/blog.md
 content/ja/docs/contributing/development.md
 content/ja/docs/contributing/issues.md
 content/ja/docs/contributing/localization.md
@@ -53,6 +52,9 @@ content/ja/docs/demo/architecture.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/demo/feature-flags/_index.md
 content/ja/docs/demo/kubernetes-deployment.md
+content/ja/docs/guidance/_index.md
+content/ja/docs/guidance/blueprints/_index.md
+content/ja/docs/guidance/reference-implementations/_index.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/_includes/exporters/zipkin-setup.md
 content/ja/docs/languages/_includes/index-intro.md
