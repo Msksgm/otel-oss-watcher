@@ -149,9 +149,7 @@ content/en/docs/languages/python/benchmarks.md
 content/en/docs/languages/python/cookbook.md
 content/en/docs/languages/python/distro.md
 content/en/docs/languages/python/examples.md
-content/en/docs/languages/python/exporters.md
 content/en/docs/languages/python/instrumentation.md
-content/en/docs/languages/python/libraries.md
 content/en/docs/languages/python/mypy.md
 content/en/docs/languages/python/propagation.md
 content/en/docs/languages/python/registry.md
@@ -251,6 +249,7 @@ content/en/site/design/agent-support.md
 content/en/site/features.md
 content/en/site/skills/_index.md
 content/en/site/skills/refresh-refcache-pr-fix.md
+content/en/site/skills/update-i18n-drift-status.md
 content/en/site/testing/_index.md
 content/en/site/testing/tests/_index.md
 content/en/site/testing/tests/no-md.md
