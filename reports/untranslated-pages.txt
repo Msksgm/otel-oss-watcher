@@ -130,6 +130,7 @@ content/en/docs/languages/js/examples.md
 content/en/docs/languages/js/registry.md
 content/en/docs/languages/kotlin/_index.md
 content/en/docs/languages/kotlin/examples.md
+content/en/docs/languages/kotlin/getting-started.md
 content/en/docs/languages/kotlin/registry.md
 content/en/docs/languages/other/_index.md
 content/en/docs/languages/php/_index.md
@@ -146,12 +147,10 @@ content/en/docs/languages/php/resources.md
 content/en/docs/languages/php/sdk.md
 content/en/docs/languages/python/api.md
 content/en/docs/languages/python/benchmarks.md
-content/en/docs/languages/python/cookbook.md
 content/en/docs/languages/python/distro.md
 content/en/docs/languages/python/examples.md
 content/en/docs/languages/python/instrumentation.md
 content/en/docs/languages/python/mypy.md
-content/en/docs/languages/python/propagation.md
 content/en/docs/languages/python/registry.md
 content/en/docs/languages/ruby/api.md
 content/en/docs/languages/ruby/examples.md
