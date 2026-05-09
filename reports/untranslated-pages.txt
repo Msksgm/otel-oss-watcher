@@ -123,6 +123,7 @@ content/en/docs/languages/go/api.md
 content/en/docs/languages/go/examples.md
 content/en/docs/languages/go/registry.md
 content/en/docs/languages/java/examples.md
+content/en/docs/languages/java/jmx.md
 content/en/docs/languages/java/registry.md
 content/en/docs/languages/js/_includes/esm-support-note.md
 content/en/docs/languages/js/api.md
