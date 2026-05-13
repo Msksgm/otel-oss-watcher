@@ -41,11 +41,9 @@ content/ja/docs/concepts/signals/traces.md
 content/ja/docs/contributing/_index.md
 content/ja/docs/contributing/development.md
 content/ja/docs/contributing/issues.md
-content/ja/docs/contributing/localization.md
 content/ja/docs/contributing/pr-checks.md
 content/ja/docs/contributing/pull-requests.md
 content/ja/docs/contributing/sig-practices.md
-content/ja/docs/contributing/style-guide.md
 content/ja/docs/demo/architecture.md
 content/ja/docs/demo/feature-flags/_index.md
 content/ja/docs/demo/kubernetes-deployment.md
@@ -99,6 +97,7 @@ content/ja/docs/platforms/kubernetes/operator/automatic.md
 content/ja/docs/platforms/kubernetes/operator/horizontal-pod-autoscaling.md
 content/ja/docs/platforms/kubernetes/operator/troubleshooting/automatic.md
 content/ja/docs/platforms/kubernetes/operator/troubleshooting/target-allocator.md
+content/ja/docs/security/_index.md
 content/ja/docs/security/handling-sensitive-data.md
 content/ja/docs/what-is-opentelemetry.md
 content/ja/docs/zero-code/_index.md
