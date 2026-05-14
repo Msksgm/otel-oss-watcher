@@ -45,7 +45,6 @@ content/ja/docs/contributing/pr-checks.md
 content/ja/docs/contributing/pull-requests.md
 content/ja/docs/contributing/sig-practices.md
 content/ja/docs/demo/architecture.md
-content/ja/docs/demo/feature-flags/_index.md
 content/ja/docs/demo/kubernetes-deployment.md
 content/ja/docs/guidance/_index.md
 content/ja/docs/guidance/blueprints/_index.md
@@ -113,6 +112,8 @@ content/ja/docs/zero-code/java/spring-boot-starter/other-spring-autoconfig.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/js/_index.md
 content/ja/docs/zero-code/js/configuration.md
+content/ja/docs/zero-code/obi/_index.md
+content/ja/docs/zero-code/obi/metrics.md
 content/ja/docs/zero-code/obi/setup/docker.md
 content/ja/docs/zero-code/obi/setup/kubernetes.md
 content/ja/docs/zero-code/obi/setup/standalone.md

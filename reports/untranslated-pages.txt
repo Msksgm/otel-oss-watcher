@@ -170,6 +170,7 @@ content/en/docs/languages/swift/registry.md
 content/en/docs/platforms/client-apps/android.md
 content/en/docs/platforms/client-apps/ios/_index.md
 content/en/docs/platforms/client-apps/web/_index.md
+content/en/docs/specs/otel-config/types.md
 content/en/docs/zero-code/dotnet/_index.md
 content/en/docs/zero-code/dotnet/configuration.md
 content/en/docs/zero-code/dotnet/custom.md
@@ -206,13 +207,11 @@ content/en/docs/zero-code/obi/configure/sample-traces.md
 content/en/docs/zero-code/obi/configure/service-discovery.md
 content/en/docs/zero-code/obi/configure/tune-performance.md
 content/en/docs/zero-code/obi/distributed-traces.md
-content/en/docs/zero-code/obi/network/_index.md
 content/en/docs/zero-code/obi/network/config.md
 content/en/docs/zero-code/obi/network/inter-az.md
 content/en/docs/zero-code/obi/network/quickstart.md
 content/en/docs/zero-code/obi/requesttime/index.md
 content/en/docs/zero-code/obi/security.md
-content/en/docs/zero-code/obi/setup/kubernetes-helm.md
 content/en/docs/zero-code/obi/trace-log-correlation.md
 content/en/docs/zero-code/obi/troubleshooting.md
 content/en/docs/zero-code/php.md
