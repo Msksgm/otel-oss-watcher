@@ -45,6 +45,7 @@ content/ja/docs/contributing/pr-checks.md
 content/ja/docs/contributing/pull-requests.md
 content/ja/docs/contributing/sig-practices.md
 content/ja/docs/demo/architecture.md
+content/ja/docs/demo/docker-deployment.md
 content/ja/docs/demo/kubernetes-deployment.md
 content/ja/docs/guidance/_index.md
 content/ja/docs/guidance/blueprints/_index.md
@@ -98,6 +99,7 @@ content/ja/docs/platforms/kubernetes/operator/troubleshooting/automatic.md
 content/ja/docs/platforms/kubernetes/operator/troubleshooting/target-allocator.md
 content/ja/docs/security/_index.md
 content/ja/docs/security/handling-sensitive-data.md
+content/ja/docs/security/security-response.md
 content/ja/docs/what-is-opentelemetry.md
 content/ja/docs/zero-code/_index.md
 content/ja/docs/zero-code/java/_index.md
@@ -113,6 +115,7 @@ content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentatio
 content/ja/docs/zero-code/js/_index.md
 content/ja/docs/zero-code/js/configuration.md
 content/ja/docs/zero-code/obi/_index.md
+content/ja/docs/zero-code/obi/configure/export-data.md
 content/ja/docs/zero-code/obi/metrics.md
 content/ja/docs/zero-code/obi/setup/docker.md
 content/ja/docs/zero-code/obi/setup/kubernetes.md
