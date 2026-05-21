@@ -4,9 +4,7 @@ content/ja/announcements/kubecon-japan.md
 content/ja/blog/2025/ai-agent-observability/index.md
 content/ja/blog/2025/declarative-config.md
 content/ja/blog/2025/kubecon-japan.md
-content/ja/blog/_index.md
 content/ja/docs/_includes/exporters/intro.md
-content/ja/docs/collector/_index.md
 content/ja/docs/collector/components/connector.md
 content/ja/docs/collector/components/exporter.md
 content/ja/docs/collector/components/extension.md
@@ -35,17 +33,13 @@ content/ja/docs/concepts/resources/index.md
 content/ja/docs/concepts/signals/_index.md
 content/ja/docs/concepts/signals/baggage.md
 content/ja/docs/concepts/signals/traces.md
-content/ja/docs/contributing/_index.md
 content/ja/docs/contributing/development.md
 content/ja/docs/contributing/issues.md
 content/ja/docs/contributing/pr-checks.md
-content/ja/docs/contributing/pull-requests.md
 content/ja/docs/contributing/sig-practices.md
 content/ja/docs/demo/architecture.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/demo/kubernetes-deployment.md
-content/ja/docs/guidance/blueprints/_index.md
-content/ja/docs/guidance/reference-implementations/_index.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/_includes/exporters/zipkin-setup.md
 content/ja/docs/languages/_includes/index-intro.md
