@@ -5,6 +5,7 @@ content/en/announcements/kubecon-china.md
 content/en/announcements/kubecon-eu.md
 content/en/announcements/kubecon-india.md
 content/en/announcements/open-observability-summit-na.md
+content/en/announcements/otel-graduates.md
 content/en/announcements/otel-unplugged.md
 content/en/api.md
 content/en/community/_index.md
