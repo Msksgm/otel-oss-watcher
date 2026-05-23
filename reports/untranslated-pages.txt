@@ -23,7 +23,6 @@ content/en/docs/collector/extend/custom-component/connector/index.md
 content/en/docs/collector/extend/custom-component/receiver.md
 content/en/docs/compatibility/migration/opencensus.md
 content/en/docs/compatibility/migration/opentracing.md
-content/en/docs/compatibility/prometheus/_index.md
 content/en/docs/compatibility/prometheus/client-libraries.md
 content/en/docs/compatibility/prometheus/otlp-metrics-export.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
@@ -180,7 +179,6 @@ content/en/docs/zero-code/dotnet/getting-started.md
 content/en/docs/zero-code/dotnet/instrumentations.md
 content/en/docs/zero-code/dotnet/nuget-packages.md
 content/en/docs/zero-code/dotnet/troubleshooting.md
-content/en/docs/zero-code/go/autosdk.md
 content/en/docs/zero-code/java/agent/annotations.md
 content/en/docs/zero-code/java/agent/api.md
 content/en/docs/zero-code/java/agent/configuration.md
