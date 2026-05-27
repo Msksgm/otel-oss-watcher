@@ -1,7 +1,6 @@
 content/ja/_includes/otel-does-not-validate-3rd-pty-distros.md
 content/ja/_index.md
 content/ja/announcements/kubecon-japan.md
-content/ja/blog/2025/ai-agent-observability/index.md
 content/ja/blog/2025/declarative-config.md
 content/ja/blog/2025/kubecon-japan.md
 content/ja/docs/_includes/exporters/intro.md
@@ -27,17 +26,11 @@ content/ja/docs/collector/quick-start.md
 content/ja/docs/collector/troubleshooting.md
 content/ja/docs/concepts/context-propagation/index.md
 content/ja/docs/concepts/glossary.md
-content/ja/docs/concepts/instrumentation/_index.md
 content/ja/docs/concepts/observability-primer.md
-content/ja/docs/concepts/resources/index.md
-content/ja/docs/concepts/signals/_index.md
 content/ja/docs/concepts/signals/baggage.md
 content/ja/docs/concepts/signals/traces.md
 content/ja/docs/contributing/development.md
-content/ja/docs/contributing/issues.md
-content/ja/docs/contributing/pr-checks.md
 content/ja/docs/contributing/sig-practices.md
-content/ja/docs/demo/architecture.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/demo/kubernetes-deployment.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
@@ -45,7 +38,6 @@ content/ja/docs/languages/_includes/exporters/zipkin-setup.md
 content/ja/docs/languages/_includes/index-intro.md
 content/ja/docs/languages/_includes/native-lib-alert.md
 content/ja/docs/languages/_index.md
-content/ja/docs/languages/go/_index.md
 content/ja/docs/languages/go/exporters.md
 content/ja/docs/languages/go/getting-started.md
 content/ja/docs/languages/go/instrumentation.md
@@ -57,7 +49,6 @@ content/ja/docs/languages/java/getting-started.md
 content/ja/docs/languages/java/instrumentation.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/_includes/browser-instrumentation-warning.md
-content/ja/docs/languages/js/_index.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/languages/js/getting-started/_index.md
 content/ja/docs/languages/js/getting-started/browser.md
@@ -68,10 +59,8 @@ content/ja/docs/languages/js/propagation.md
 content/ja/docs/languages/js/resources.md
 content/ja/docs/languages/js/serverless.md
 content/ja/docs/languages/python/getting-started.md
-content/ja/docs/languages/ruby/_index.md
 content/ja/docs/languages/ruby/getting-started.md
 content/ja/docs/languages/ruby/instrumentation.md
-content/ja/docs/languages/sdk-configuration/_index.md
 content/ja/docs/languages/sdk-configuration/general.md
 content/ja/docs/languages/sdk-configuration/otlp-exporter.md
 content/ja/docs/platforms/client-apps/_index.md
@@ -88,8 +77,6 @@ content/ja/docs/platforms/kubernetes/operator/troubleshooting/automatic.md
 content/ja/docs/platforms/kubernetes/operator/troubleshooting/target-allocator.md
 content/ja/docs/security/handling-sensitive-data.md
 content/ja/docs/security/security-response.md
-content/ja/docs/what-is-opentelemetry.md
-content/ja/docs/zero-code/java/_index.md
 content/ja/docs/zero-code/java/agent/getting-started.md
 content/ja/docs/zero-code/java/quarkus.md
 content/ja/docs/zero-code/java/spring-boot-starter/additional-instrumentations.md
