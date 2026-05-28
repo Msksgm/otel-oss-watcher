@@ -41,7 +41,6 @@ content/ja/docs/languages/_index.md
 content/ja/docs/languages/go/exporters.md
 content/ja/docs/languages/go/getting-started.md
 content/ja/docs/languages/go/instrumentation.md
-content/ja/docs/languages/go/sampling.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/api.md
 content/ja/docs/languages/java/configuration.md
