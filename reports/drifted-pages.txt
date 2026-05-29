@@ -4,6 +4,7 @@ content/ja/announcements/kubecon-japan.md
 content/ja/blog/2025/declarative-config.md
 content/ja/blog/2025/kubecon-japan.md
 content/ja/docs/_includes/exporters/intro.md
+content/ja/docs/collector/_index.md
 content/ja/docs/collector/components/connector.md
 content/ja/docs/collector/components/exporter.md
 content/ja/docs/collector/components/extension.md
@@ -29,10 +30,7 @@ content/ja/docs/concepts/glossary.md
 content/ja/docs/concepts/observability-primer.md
 content/ja/docs/concepts/signals/baggage.md
 content/ja/docs/concepts/signals/traces.md
-content/ja/docs/contributing/development.md
 content/ja/docs/contributing/sig-practices.md
-content/ja/docs/demo/docker-deployment.md
-content/ja/docs/demo/kubernetes-deployment.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/_includes/exporters/zipkin-setup.md
 content/ja/docs/languages/_includes/index-intro.md
@@ -40,11 +38,9 @@ content/ja/docs/languages/_includes/native-lib-alert.md
 content/ja/docs/languages/_index.md
 content/ja/docs/languages/go/exporters.md
 content/ja/docs/languages/go/getting-started.md
-content/ja/docs/languages/go/instrumentation.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/api.md
 content/ja/docs/languages/java/configuration.md
-content/ja/docs/languages/java/getting-started.md
 content/ja/docs/languages/java/instrumentation.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/_includes/browser-instrumentation-warning.md
@@ -74,6 +70,7 @@ content/ja/docs/platforms/kubernetes/operator/automatic.md
 content/ja/docs/platforms/kubernetes/operator/horizontal-pod-autoscaling.md
 content/ja/docs/platforms/kubernetes/operator/troubleshooting/automatic.md
 content/ja/docs/platforms/kubernetes/operator/troubleshooting/target-allocator.md
+content/ja/docs/security/_index.md
 content/ja/docs/security/handling-sensitive-data.md
 content/ja/docs/security/security-response.md
 content/ja/docs/zero-code/java/agent/getting-started.md
@@ -85,10 +82,10 @@ content/ja/docs/zero-code/java/spring-boot-starter/getting-started.md
 content/ja/docs/zero-code/java/spring-boot-starter/other-spring-autoconfig.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/js/configuration.md
-content/ja/docs/zero-code/obi/_index.md
 content/ja/docs/zero-code/obi/configure/export-data.md
 content/ja/docs/zero-code/obi/metrics.md
 content/ja/docs/zero-code/obi/setup/docker.md
+content/ja/docs/zero-code/obi/setup/kubernetes-helm.md
 content/ja/docs/zero-code/obi/setup/kubernetes.md
 content/ja/docs/zero-code/obi/setup/standalone.md
 content/ja/docs/zero-code/python/_index.md
