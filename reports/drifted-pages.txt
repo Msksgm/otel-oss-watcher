@@ -12,7 +12,6 @@ content/ja/docs/collector/components/receiver.md
 content/ja/docs/collector/configuration.md
 content/ja/docs/collector/deploy/agent.md
 content/ja/docs/collector/deploy/other/no-collector.md
-content/ja/docs/collector/distributions.md
 content/ja/docs/collector/extend/custom-component/extension/authenticator.md
 content/ja/docs/collector/extend/ocb.md
 content/ja/docs/collector/install/binary/linux.md
@@ -29,8 +28,6 @@ content/ja/docs/concepts/glossary.md
 content/ja/docs/concepts/observability-primer.md
 content/ja/docs/concepts/signals/baggage.md
 content/ja/docs/concepts/signals/traces.md
-content/ja/docs/contributing/sig-practices.md
-content/ja/docs/contributing/style-guide.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/_includes/exporters/zipkin-setup.md
 content/ja/docs/languages/_includes/index-intro.md
@@ -43,7 +40,6 @@ content/ja/docs/languages/java/instrumentation.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/_includes/browser-instrumentation-warning.md
 content/ja/docs/languages/js/benchmarks.md
-content/ja/docs/languages/js/getting-started/browser.md
 content/ja/docs/languages/js/getting-started/nodejs.md
 content/ja/docs/languages/js/instrumentation.md
 content/ja/docs/languages/js/libraries.md
@@ -85,9 +81,7 @@ content/ja/docs/zero-code/obi/setup/docker.md
 content/ja/docs/zero-code/obi/setup/kubernetes-helm.md
 content/ja/docs/zero-code/obi/setup/kubernetes.md
 content/ja/docs/zero-code/obi/setup/standalone.md
-content/ja/docs/zero-code/python/_index.md
 content/ja/docs/zero-code/python/configuration.md
 content/ja/docs/zero-code/python/example.md
-content/ja/docs/zero-code/python/logs-example.md
 content/ja/docs/zero-code/python/operator.md
 content/ja/docs/zero-code/python/troubleshooting.md
