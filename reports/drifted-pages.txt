@@ -24,7 +24,6 @@ content/ja/docs/collector/management.md
 content/ja/docs/collector/quick-start.md
 content/ja/docs/collector/troubleshooting.md
 content/ja/docs/concepts/context-propagation/index.md
-content/ja/docs/concepts/glossary.md
 content/ja/docs/concepts/observability-primer.md
 content/ja/docs/concepts/signals/baggage.md
 content/ja/docs/concepts/signals/traces.md
@@ -32,8 +31,6 @@ content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/_includes/exporters/zipkin-setup.md
 content/ja/docs/languages/_includes/index-intro.md
 content/ja/docs/languages/_includes/native-lib-alert.md
-content/ja/docs/languages/go/exporters.md
-content/ja/docs/languages/go/getting-started.md
 content/ja/docs/languages/java/api.md
 content/ja/docs/languages/java/configuration.md
 content/ja/docs/languages/java/instrumentation.md
@@ -69,7 +66,6 @@ content/ja/docs/security/security-response.md
 content/ja/docs/zero-code/java/agent/getting-started.md
 content/ja/docs/zero-code/java/quarkus.md
 content/ja/docs/zero-code/java/spring-boot-starter/additional-instrumentations.md
-content/ja/docs/zero-code/java/spring-boot-starter/annotations.md
 content/ja/docs/zero-code/java/spring-boot-starter/api.md
 content/ja/docs/zero-code/java/spring-boot-starter/getting-started.md
 content/ja/docs/zero-code/java/spring-boot-starter/other-spring-autoconfig.md
