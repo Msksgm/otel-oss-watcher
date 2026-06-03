@@ -23,7 +23,6 @@ content/ja/docs/collector/internal-telemetry.md
 content/ja/docs/collector/management.md
 content/ja/docs/collector/quick-start.md
 content/ja/docs/collector/troubleshooting.md
-content/ja/docs/concepts/context-propagation/index.md
 content/ja/docs/concepts/observability-primer.md
 content/ja/docs/concepts/signals/baggage.md
 content/ja/docs/concepts/signals/traces.md
@@ -31,9 +30,9 @@ content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/_includes/exporters/zipkin-setup.md
 content/ja/docs/languages/_includes/index-intro.md
 content/ja/docs/languages/_includes/native-lib-alert.md
+content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/api.md
 content/ja/docs/languages/java/configuration.md
-content/ja/docs/languages/java/instrumentation.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/_includes/browser-instrumentation-warning.md
 content/ja/docs/languages/js/benchmarks.md
