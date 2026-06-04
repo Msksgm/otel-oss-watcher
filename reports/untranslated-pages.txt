@@ -29,7 +29,6 @@ content/en/docs/demo/feature-flags/recommendation-cache/index.md
 content/en/docs/demo/sample-configurations/_index.md
 content/en/docs/demo/sample-configurations/tail-sampling-service-criticality.md
 content/en/docs/demo/screenshots/index.md
-content/en/docs/demo/services/accounting.md
 content/en/docs/demo/services/ad.md
 content/en/docs/demo/services/cart/index.md
 content/en/docs/demo/services/checkout.md
@@ -55,6 +54,7 @@ content/en/docs/demo/telemetry-features/manual-span-attributes.md
 content/en/docs/demo/telemetry-features/metric-coverage.md
 content/en/docs/demo/telemetry-features/trace-coverage.md
 content/en/docs/getting-started/reference-application-specification.md
+content/en/docs/guidance/blueprints/instrumenting-applications-and-processes-on-nonk8s-environments.md
 content/en/docs/guidance/reference-implementations/adobe/index.md
 content/en/docs/guidance/reference-implementations/mastodon/index.md
 content/en/docs/guidance/reference-implementations/skyscanner/index.md
@@ -207,7 +207,6 @@ content/en/docs/zero-code/obi/distributed-traces.md
 content/en/docs/zero-code/obi/network/config.md
 content/en/docs/zero-code/obi/network/inter-az.md
 content/en/docs/zero-code/obi/network/quickstart.md
-content/en/docs/zero-code/obi/requesttime/index.md
 content/en/docs/zero-code/obi/security.md
 content/en/docs/zero-code/obi/trace-log-correlation.md
 content/en/docs/zero-code/obi/troubleshooting.md
