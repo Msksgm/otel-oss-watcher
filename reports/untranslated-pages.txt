@@ -124,7 +124,6 @@ content/en/docs/languages/go/registry.md
 content/en/docs/languages/java/examples.md
 content/en/docs/languages/java/jmx.md
 content/en/docs/languages/java/registry.md
-content/en/docs/languages/js/_includes/esm-support-note.md
 content/en/docs/languages/js/api.md
 content/en/docs/languages/js/examples.md
 content/en/docs/languages/js/registry.md
@@ -148,7 +147,6 @@ content/en/docs/languages/php/sdk.md
 content/en/docs/languages/python/api.md
 content/en/docs/languages/python/benchmarks.md
 content/en/docs/languages/python/examples.md
-content/en/docs/languages/python/instrumentation.md
 content/en/docs/languages/python/registry.md
 content/en/docs/languages/ruby/api.md
 content/en/docs/languages/ruby/examples.md
@@ -170,7 +168,6 @@ content/en/docs/languages/swift/libraries.md
 content/en/docs/languages/swift/registry.md
 content/en/docs/platforms/client-apps/android.md
 content/en/docs/platforms/client-apps/ios/_index.md
-content/en/docs/platforms/client-apps/web/_index.md
 content/en/docs/specs/otel-config/types.md
 content/en/docs/zero-code/dotnet/_index.md
 content/en/docs/zero-code/dotnet/configuration.md
@@ -195,21 +192,10 @@ content/en/docs/zero-code/java/spring-boot-starter/programmatic-configuration.md
 content/en/docs/zero-code/java/spring-boot-starter/sdk-configuration.md
 content/en/docs/zero-code/obi/cardinality/index.md
 content/en/docs/zero-code/obi/cilium-compatibility.md
-content/en/docs/zero-code/obi/configure/collector-receiver.md
-content/en/docs/zero-code/obi/configure/internal-metrics-reporter.md
-content/en/docs/zero-code/obi/configure/metrics-histograms.md
-content/en/docs/zero-code/obi/configure/metrics-traces-attributes.md
-content/en/docs/zero-code/obi/configure/routes-decorator.md
-content/en/docs/zero-code/obi/configure/sample-traces.md
 content/en/docs/zero-code/obi/configure/service-discovery.md
-content/en/docs/zero-code/obi/configure/tune-performance.md
-content/en/docs/zero-code/obi/distributed-traces.md
-content/en/docs/zero-code/obi/network/config.md
 content/en/docs/zero-code/obi/network/inter-az.md
 content/en/docs/zero-code/obi/network/quickstart.md
-content/en/docs/zero-code/obi/security.md
 content/en/docs/zero-code/obi/trace-log-correlation.md
-content/en/docs/zero-code/obi/troubleshooting.md
 content/en/docs/zero-code/php.md
 content/en/ecosystem/_includes/keep-up-to-date.md
 content/en/ecosystem/_index.md
