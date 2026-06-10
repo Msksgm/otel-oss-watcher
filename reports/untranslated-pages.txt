@@ -50,7 +50,6 @@ content/en/docs/getting-started/reference-application-specification.md
 content/en/docs/guidance/blueprints/instrumenting-applications-and-processes-on-nonk8s-environments.md
 content/en/docs/guidance/reference-implementations/adobe/index.md
 content/en/docs/guidance/reference-implementations/mastodon/index.md
-content/en/docs/guidance/reference-implementations/skyscanner/index.md
 content/en/docs/languages/cpp/_index.md
 content/en/docs/languages/cpp/api.md
 content/en/docs/languages/cpp/examples.md

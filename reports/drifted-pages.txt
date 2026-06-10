@@ -1,3 +1,4 @@
+content/ja/docs/collector/_index.md
 content/ja/docs/collector/extend/ocb.md
 content/ja/docs/collector/internal-telemetry.md
 content/ja/docs/collector/troubleshooting.md
@@ -5,11 +6,10 @@ content/ja/docs/contributing/localization.md
 content/ja/docs/contributing/pr-checks.md
 content/ja/docs/contributing/pull-requests.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
-content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/benchmarks.md
+content/ja/docs/security/_index.md
 content/ja/docs/zero-code/java/_index.md
-content/ja/docs/zero-code/java/spring-boot-starter/additional-instrumentations.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/obi/configure/export-data.md
 content/ja/docs/zero-code/obi/configure/metrics-traces-attributes.md
@@ -17,4 +17,4 @@ content/ja/docs/zero-code/obi/metrics.md
 content/ja/docs/zero-code/obi/setup/docker.md
 content/ja/docs/zero-code/obi/setup/kubernetes.md
 content/ja/docs/zero-code/obi/setup/standalone.md
-content/ja/docs/zero-code/python/troubleshooting.md
+content/ja/docs/zero-code/python/_index.md
