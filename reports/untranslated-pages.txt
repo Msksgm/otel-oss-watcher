@@ -5,7 +5,6 @@ content/en/announcements/kubecon-china.md
 content/en/announcements/kubecon-eu.md
 content/en/announcements/kubecon-india.md
 content/en/announcements/open-observability-summit-na.md
-content/en/announcements/otel-graduates.md
 content/en/announcements/otel-unplugged.md
 content/en/api.md
 content/en/community/_index.md
@@ -158,7 +157,6 @@ content/en/docs/platforms/client-apps/android.md
 content/en/docs/platforms/client-apps/ios/_index.md
 content/en/docs/specs/otel-config/types.md
 content/en/docs/zero-code/dotnet/_index.md
-content/en/docs/zero-code/dotnet/configuration.md
 content/en/docs/zero-code/dotnet/custom.md
 content/en/docs/zero-code/dotnet/getting-started.md
 content/en/docs/zero-code/dotnet/instrumentations.md
@@ -204,6 +202,7 @@ content/en/site/features.md
 content/en/site/skills/_index.md
 content/en/site/skills/refresh-refcache-pr-fix.md
 content/en/site/skills/update-i18n-drift-status.md
+content/en/site/skills/update-old-blog-ignores.md
 content/en/site/testing/_index.md
 content/en/site/testing/tests/_index.md
 content/en/site/testing/tests/no-md.md
