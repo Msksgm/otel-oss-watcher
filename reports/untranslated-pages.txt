@@ -201,6 +201,7 @@ content/en/site/design/agent-support.md
 content/en/site/features.md
 content/en/site/skills/_index.md
 content/en/site/skills/refresh-refcache-pr-fix.md
+content/en/site/skills/update-git-submodule.md
 content/en/site/skills/update-i18n-drift-status.md
 content/en/site/skills/update-old-blog-ignores.md
 content/en/site/testing/_index.md
