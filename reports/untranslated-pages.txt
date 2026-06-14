@@ -159,7 +159,6 @@ content/en/docs/specs/otel-config/types.md
 content/en/docs/zero-code/dotnet/_index.md
 content/en/docs/zero-code/dotnet/custom.md
 content/en/docs/zero-code/dotnet/getting-started.md
-content/en/docs/zero-code/dotnet/instrumentations.md
 content/en/docs/zero-code/dotnet/nuget-packages.md
 content/en/docs/zero-code/dotnet/troubleshooting.md
 content/en/docs/zero-code/java/agent/annotations.md

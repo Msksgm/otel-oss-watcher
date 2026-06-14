@@ -12,8 +12,6 @@ content/ja/docs/getting-started/dev.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/benchmarks.md
-content/ja/docs/languages/php/libraries.md
-content/ja/docs/security/_index.md
 content/ja/docs/zero-code/java/_index.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/obi/configure/export-data.md
