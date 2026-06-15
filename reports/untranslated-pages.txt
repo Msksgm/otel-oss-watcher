@@ -128,7 +128,6 @@ content/en/docs/languages/php/context.md
 content/en/docs/languages/php/examples.md
 content/en/docs/languages/php/exporters.md
 content/en/docs/languages/php/getting-started.md
-content/en/docs/languages/php/instrumentation.md
 content/en/docs/languages/php/propagation.md
 content/en/docs/languages/php/registry.md
 content/en/docs/languages/php/resources.md
@@ -143,7 +142,6 @@ content/en/docs/languages/rust/_index.md
 content/en/docs/languages/rust/api.md
 content/en/docs/languages/rust/examples.md
 content/en/docs/languages/rust/exporters.md
-content/en/docs/languages/rust/getting-started.md
 content/en/docs/languages/rust/registry.md
 content/en/docs/languages/sdk-configuration/_includes/env-var-note.md
 content/en/docs/languages/sdk-configuration/declarative-configuration.md
