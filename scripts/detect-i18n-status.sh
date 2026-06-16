@@ -43,19 +43,31 @@ UNTRANSLATED_COUNT=$(wc -l < "$UNTRANSLATED_FILE" | tr -d ' ')
 echo "未翻訳ページ: ${UNTRANSLATED_COUNT} 件"
 echo "出力: $UNTRANSLATED_FILE"
 
-# --- 2. drifted ページの検出 ---
+# --- 2. drifted ページの検出 / 3. 削除/リネームされたページの検出 ---
 echo ""
-echo "=== drifted ページの検出 ==="
+echo "=== drifted ページ・削除/リネームされたページの検出 ==="
 
 DRIFTED_FILE="$REPORTS_DIR/drifted-pages.txt"
+REMOVED_FILE="$REPORTS_DIR/removed-pages.txt"
+CHECK_I18N_LOG="$WORK_DIR/check-i18n.log"
 
-# npm run check:i18n -- content/ja の出力から drifted ファイルを抽出
-# 出力形式: "> Drifted file: content/ja/docs/foo.md"
-npm run check:i18n -- content/ja 2>&1 | grep '^> Drifted file: ' | sed 's/^> Drifted file: //' | sort > "$DRIFTED_FILE"
+# npm run check:i18n -- content/ja の出力をログに保存
+# drifted/removed ページがあると非ゼロで終了するため || true で継続
+# 出力形式:
+#   "> Drifted file: content/ja/docs/foo.md"
+#   "File not found:    content/ja/docs/bar.md - en page was removed or renamed"
+npm run check:i18n -- content/ja 2>&1 > "$CHECK_I18N_LOG" || true
+
+grep '^> Drifted file: ' "$CHECK_I18N_LOG" | sed 's/^> Drifted file: //' | sort > "$DRIFTED_FILE" || true
+grep '^File not found:' "$CHECK_I18N_LOG" | sed -E 's/^File not found:[[:space:]]+//; s/ - en page was removed or renamed$//' | sort > "$REMOVED_FILE" || true
 
 DRIFTED_COUNT=$(wc -l < "$DRIFTED_FILE" | tr -d ' ')
 echo "drifted ページ: ${DRIFTED_COUNT} 件"
 echo "出力: $DRIFTED_FILE"
+
+REMOVED_COUNT=$(wc -l < "$REMOVED_FILE" | tr -d ' ')
+echo "削除/リネームされたページ: ${REMOVED_COUNT} 件"
+echo "出力: $REMOVED_FILE"
 
 echo ""
 echo "=== 完了 ==="

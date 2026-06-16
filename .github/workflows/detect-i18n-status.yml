@@ -30,8 +30,9 @@ jobs:
         run: |
           UNTRANSLATED_COUNT=$(wc -l < reports/untranslated-pages.txt | tr -d ' ')
           DRIFTED_COUNT=$(wc -l < reports/drifted-pages.txt | tr -d ' ')
+          REMOVED_COUNT=$(wc -l < reports/removed-pages.txt | tr -d ' ')
           curl -s -X POST "$SLACK_WEBHOOK_URL" \
             -H 'Content-Type: application/json' \
             -d "{
-              \"text\": \":globe_with_meridians: *opentelemetry.io i18n status*\n未翻訳ページ: ${UNTRANSLATED_COUNT} 件\ndrifted ページ: ${DRIFTED_COUNT} 件\"
+              \"text\": \":globe_with_meridians: *opentelemetry.io i18n status*\n未翻訳ページ: ${UNTRANSLATED_COUNT} 件\ndrifted ページ: ${DRIFTED_COUNT} 件\n削除/リネームされたページ: ${REMOVED_COUNT} 件\"
             }"
