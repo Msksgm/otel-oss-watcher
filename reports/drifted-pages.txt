@@ -1,13 +1,9 @@
-content/ja/blog/2025/kubecon-japan.md
-content/ja/docs/collector/_index.md
 content/ja/docs/collector/extend/ocb.md
 content/ja/docs/collector/internal-telemetry.md
 content/ja/docs/contributing/blog.md
 content/ja/docs/contributing/localization.md
 content/ja/docs/contributing/pr-checks.md
 content/ja/docs/contributing/pull-requests.md
-content/ja/docs/contributing/sig-practices.md
-content/ja/docs/getting-started/dev.md
 content/ja/docs/languages/_includes/exporters/prometheus-setup.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/benchmarks.md
