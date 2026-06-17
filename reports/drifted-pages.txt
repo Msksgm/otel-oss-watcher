@@ -1,10 +1,8 @@
 content/ja/docs/collector/extend/ocb.md
 content/ja/docs/collector/internal-telemetry.md
-content/ja/docs/contributing/blog.md
 content/ja/docs/contributing/localization.md
 content/ja/docs/contributing/pr-checks.md
-content/ja/docs/contributing/pull-requests.md
-content/ja/docs/languages/_includes/exporters/prometheus-setup.md
+content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md

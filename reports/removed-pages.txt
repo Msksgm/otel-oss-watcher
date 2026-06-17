@@ -1,0 +1,2 @@
+content/ja/docs/collector/deploy/gateway/index.md
+content/ja/docs/platforms/client-apps/android/_index.md
