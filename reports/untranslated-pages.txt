@@ -18,7 +18,6 @@ content/en/community/members.md
 content/en/docs/collector/deploy/choose.md
 content/en/docs/collector/deploy/gateway.md
 content/en/docs/collector/deploy/other/agent-to-gateway/_index.md
-content/en/docs/collector/extend/custom-component/connector/index.md
 content/en/docs/compatibility/migration/opencensus.md
 content/en/docs/compatibility/migration/opentracing.md
 content/en/docs/compatibility/prometheus/otlp-metrics-export.md
@@ -46,7 +45,6 @@ content/en/docs/demo/telemetry-features/manual-span-attributes.md
 content/en/docs/demo/telemetry-features/metric-coverage.md
 content/en/docs/demo/telemetry-features/trace-coverage.md
 content/en/docs/getting-started/reference-application-specification.md
-content/en/docs/guidance/blueprints/instrumenting-applications-and-processes-on-nonk8s-environments.md
 content/en/docs/guidance/reference-implementations/adobe/index.md
 content/en/docs/guidance/reference-implementations/mastodon/index.md
 content/en/docs/languages/cpp/_index.md
@@ -117,7 +115,6 @@ content/en/docs/languages/java/registry.md
 content/en/docs/languages/js/api.md
 content/en/docs/languages/js/examples.md
 content/en/docs/languages/js/registry.md
-content/en/docs/languages/kotlin/_index.md
 content/en/docs/languages/kotlin/examples.md
 content/en/docs/languages/kotlin/getting-started.md
 content/en/docs/languages/kotlin/registry.md
@@ -196,6 +193,8 @@ content/en/site/build/scripts.md
 content/en/site/design/_index.md
 content/en/site/design/agent-support.md
 content/en/site/features.md
+content/en/site/implementation/_index.md
+content/en/site/implementation/style-guide.md
 content/en/site/skills/_index.md
 content/en/site/skills/refresh-refcache-pr-fix.md
 content/en/site/skills/update-git-submodule.md
