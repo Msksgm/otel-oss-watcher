@@ -187,6 +187,7 @@ content/en/site/build/announcements.md
 content/en/site/build/ci-workflows.md
 content/en/site/build/collector-components/_index.md
 content/en/site/build/content-module-patches.md
+content/en/site/build/link-checking.md
 content/en/site/build/localization/_index.md
 content/en/site/build/npm-scripts.md
 content/en/site/build/scripts.md
