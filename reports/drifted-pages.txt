@@ -3,3 +3,4 @@ content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/zero-code/java/_index.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
+content/ja/site/build/ci-workflows.md
