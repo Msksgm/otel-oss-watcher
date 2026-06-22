@@ -72,7 +72,6 @@ content/en/docs/languages/dotnet/logs/redaction.md
 content/en/docs/languages/dotnet/logs/routing.md
 content/en/docs/languages/dotnet/metrics-api.md
 content/en/docs/languages/dotnet/metrics/_index.md
-content/en/docs/languages/dotnet/metrics/best-practices.md
 content/en/docs/languages/dotnet/metrics/exemplars.md
 content/en/docs/languages/dotnet/metrics/getting-started-aspnetcore.md
 content/en/docs/languages/dotnet/metrics/getting-started-console.md
