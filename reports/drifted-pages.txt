@@ -1,4 +1,5 @@
 content/ja/docs/concepts/instrumentation-scope/index.md
+content/ja/docs/contributing/blog.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/zero-code/java/_index.md
