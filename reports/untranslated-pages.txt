@@ -45,6 +45,7 @@ content/en/docs/demo/telemetry-features/manual-span-attributes.md
 content/en/docs/demo/telemetry-features/metric-coverage.md
 content/en/docs/demo/telemetry-features/trace-coverage.md
 content/en/docs/getting-started/reference-application-specification.md
+content/en/docs/guidance/blueprints/managed-telemetry-platforms-for-k8s-workloads.md
 content/en/docs/guidance/reference-implementations/adobe/index.md
 content/en/docs/guidance/reference-implementations/mastodon/index.md
 content/en/docs/languages/cpp/_index.md
