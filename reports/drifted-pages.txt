@@ -1,6 +1,4 @@
 content/ja/docs/contributing/blog.md
-content/ja/docs/demo/_index.md
-content/ja/docs/languages/java/configuration.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/zero-code/java/_index.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md

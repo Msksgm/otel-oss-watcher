@@ -47,7 +47,6 @@ content/en/docs/demo/telemetry-features/trace-coverage.md
 content/en/docs/getting-started/reference-application-specification.md
 content/en/docs/guidance/blueprints/managed-telemetry-platforms-for-k8s-workloads.md
 content/en/docs/guidance/reference-implementations/adobe/index.md
-content/en/docs/guidance/reference-implementations/mastodon/index.md
 content/en/docs/languages/cpp/_index.md
 content/en/docs/languages/cpp/api.md
 content/en/docs/languages/cpp/examples.md
@@ -99,7 +98,6 @@ content/en/docs/languages/erlang/_index.md
 content/en/docs/languages/erlang/api.md
 content/en/docs/languages/erlang/examples.md
 content/en/docs/languages/erlang/exporters.md
-content/en/docs/languages/erlang/instrumentation.md
 content/en/docs/languages/erlang/libraries.md
 content/en/docs/languages/erlang/propagation.md
 content/en/docs/languages/erlang/registry.md
@@ -159,7 +157,6 @@ content/en/docs/zero-code/java/agent/annotations.md
 content/en/docs/zero-code/java/agent/api.md
 content/en/docs/zero-code/java/agent/configuration.md
 content/en/docs/zero-code/java/agent/declarative-configuration.md
-content/en/docs/zero-code/java/agent/extensions.md
 content/en/docs/zero-code/java/agent/instrumentation/_index.md
 content/en/docs/zero-code/java/agent/instrumentation/http.md
 content/en/docs/zero-code/java/agent/performance.md
