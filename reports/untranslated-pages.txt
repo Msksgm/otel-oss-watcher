@@ -162,6 +162,7 @@ content/en/docs/zero-code/java/agent/server-config.md
 content/en/docs/zero-code/java/spring-boot-starter/declarative-configuration.md
 content/en/docs/zero-code/java/spring-boot-starter/programmatic-configuration.md
 content/en/docs/zero-code/java/spring-boot-starter/sdk-configuration.md
+content/en/docs/zero-code/obi/context-propagation.md
 content/en/docs/zero-code/php.md
 content/en/ecosystem/_includes/keep-up-to-date.md
 content/en/ecosystem/_index.md

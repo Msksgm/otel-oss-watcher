@@ -1,6 +1,9 @@
 content/ja/docs/collector/internal-telemetry.md
-content/ja/docs/contributing/blog.md
+content/ja/docs/concepts/signals/logs.md
+content/ja/docs/contributing/pr-checks.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/languages/python/_index.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
+content/ja/docs/zero-code/obi/_index.md
+content/ja/docs/zero-code/obi/distributed-traces.md
 content/ja/docs/zero-code/obi/troubleshooting.md
