@@ -1,11 +1,8 @@
-content/ja/docs/concepts/glossary.md
-content/ja/docs/concepts/signals/logs.md
-content/ja/docs/concepts/signals/metrics.md
-content/ja/docs/contributing/pr-checks.md
+content/ja/docs/collector/_index.md
 content/ja/docs/languages/js/benchmarks.md
-content/ja/docs/languages/python/_index.md
+content/ja/docs/languages/js/context.md
+content/ja/docs/security/_index.md
 content/ja/docs/zero-code/java/agent/supported-libraries.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/obi/_index.md
-content/ja/docs/zero-code/obi/distributed-traces.md
-content/ja/docs/zero-code/obi/troubleshooting.md
+content/ja/docs/zero-code/python/_index.md
