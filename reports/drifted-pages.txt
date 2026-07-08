@@ -1,5 +1,6 @@
 content/ja/docs/collector/_index.md
 content/ja/docs/collector/configuration.md
+content/ja/docs/collector/extend/custom-component/connector/index.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/languages/js/context.md
