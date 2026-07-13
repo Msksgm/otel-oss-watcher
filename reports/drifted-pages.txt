@@ -1,11 +1,8 @@
 content/ja/docs/collector/_index.md
 content/ja/docs/contributing/pr-checks.md
-content/ja/docs/contributing/sig-practices.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/js/benchmarks.md
-content/ja/docs/languages/js/context.md
-content/ja/docs/languages/ruby/instrumentation.md
 content/ja/docs/security/_index.md
 content/ja/docs/zero-code/dotnet/configuration.md
 content/ja/docs/zero-code/dotnet/instrumentations.md
