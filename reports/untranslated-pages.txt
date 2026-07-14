@@ -148,6 +148,11 @@ content/en/docs/zero-code/dotnet/custom.md
 content/en/docs/zero-code/dotnet/getting-started.md
 content/en/docs/zero-code/dotnet/nuget-packages.md
 content/en/docs/zero-code/dotnet/troubleshooting.md
+content/en/docs/zero-code/go/compile-time/_index.md
+content/en/docs/zero-code/go/compile-time/configuration.md
+content/en/docs/zero-code/go/compile-time/getting-started.md
+content/en/docs/zero-code/go/compile-time/supported-libraries.md
+content/en/docs/zero-code/go/compile-time/troubleshooting.md
 content/en/docs/zero-code/java/agent/annotations.md
 content/en/docs/zero-code/java/agent/api.md
 content/en/docs/zero-code/java/agent/configuration.md

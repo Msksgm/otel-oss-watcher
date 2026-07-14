@@ -1,8 +1,9 @@
 content/ja/docs/collector/_index.md
-content/ja/docs/contributing/pr-checks.md
 content/ja/docs/demo/docker-deployment.md
+content/ja/docs/guidance/blueprints/managed-telemetry-platforms-for-k8s-workloads.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/js/benchmarks.md
+content/ja/docs/languages/sdk-configuration/otlp-exporter.md
 content/ja/docs/security/_index.md
 content/ja/docs/zero-code/dotnet/configuration.md
 content/ja/docs/zero-code/dotnet/instrumentations.md
