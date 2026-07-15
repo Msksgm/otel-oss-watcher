@@ -1,6 +1,9 @@
 content/ja/docs/collector/_index.md
 content/ja/docs/demo/docker-deployment.md
+content/ja/docs/guidance/blueprints/instrumenting-applications-and-processes-on-nonk8s-environments.md
 content/ja/docs/guidance/blueprints/managed-telemetry-platforms-for-k8s-workloads.md
+content/ja/docs/guidance/reference-implementations/mastodon/index.md
+content/ja/docs/guidance/reference-implementations/skyscanner/index.md
 content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/languages/sdk-configuration/otlp-exporter.md
@@ -10,5 +13,4 @@ content/ja/docs/zero-code/dotnet/instrumentations.md
 content/ja/docs/zero-code/java/_index.md
 content/ja/docs/zero-code/java/agent/supported-libraries.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
-content/ja/docs/zero-code/python/_index.md
 content/ja/site/build/ci-workflows.md
