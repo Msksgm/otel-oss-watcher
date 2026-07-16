@@ -49,7 +49,6 @@ content/en/docs/languages/cpp/_index.md
 content/en/docs/languages/cpp/api.md
 content/en/docs/languages/cpp/examples.md
 content/en/docs/languages/cpp/getting-started.md
-content/en/docs/languages/cpp/instrumentation.md
 content/en/docs/languages/cpp/library.md
 content/en/docs/languages/cpp/registry.md
 content/en/docs/languages/dotnet/_index.md
@@ -57,7 +56,6 @@ content/en/docs/languages/dotnet/examples.md
 content/en/docs/languages/dotnet/getting-started.md
 content/en/docs/languages/dotnet/libraries.md
 content/en/docs/languages/dotnet/logs/_index.md
-content/en/docs/languages/dotnet/logs/best-practices.md
 content/en/docs/languages/dotnet/logs/complex-objects.md
 content/en/docs/languages/dotnet/logs/correlation.md
 content/en/docs/languages/dotnet/logs/dedicated-pipeline.md
@@ -142,7 +140,6 @@ content/en/docs/languages/swift/registry.md
 content/en/docs/platforms/client-apps/android.md
 content/en/docs/platforms/client-apps/ios/_index.md
 content/en/docs/specs/otel-config/types.md
-content/en/docs/zero-code/dotnet/_index.md
 content/en/docs/zero-code/dotnet/custom.md
 content/en/docs/zero-code/dotnet/getting-started.md
 content/en/docs/zero-code/dotnet/nuget-packages.md
