@@ -1,10 +1,7 @@
-content/ja/docs/collector/configuration.md
-content/ja/docs/collector/deploy/other/agent-to-gateway/_index.md
 content/ja/docs/collector/management.md
 content/ja/docs/collector/scaling.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/languages/js/benchmarks.md
-content/ja/docs/platforms/kubernetes/collector/components.md
 content/ja/docs/security/_index.md
 content/ja/docs/zero-code/java/_index.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
