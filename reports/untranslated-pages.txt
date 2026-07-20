@@ -48,7 +48,6 @@ content/en/docs/guidance/reference-implementations/adobe/index.md
 content/en/docs/languages/cpp/_index.md
 content/en/docs/languages/cpp/api.md
 content/en/docs/languages/cpp/examples.md
-content/en/docs/languages/cpp/getting-started.md
 content/en/docs/languages/cpp/library.md
 content/en/docs/languages/cpp/registry.md
 content/en/docs/languages/dotnet/_index.md

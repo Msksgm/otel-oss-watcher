@@ -1,5 +1,3 @@
-content/ja/docs/collector/management.md
-content/ja/docs/collector/scaling.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/security/_index.md
