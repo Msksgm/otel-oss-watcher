@@ -1,3 +1,6 @@
+content/ja/blog/_index.md
+content/ja/docs/contributing/localization.md
+content/ja/docs/contributing/pr-checks.md
 content/ja/docs/demo/docker-deployment.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/benchmarks.md
@@ -20,4 +23,5 @@ content/ja/docs/zero-code/obi/setup/docker.md
 content/ja/docs/zero-code/obi/setup/standalone.md
 content/ja/docs/zero-code/obi/trace-log-correlation.md
 content/ja/docs/zero-code/obi/troubleshooting.md
+content/ja/site/build/ci-workflows.md
 content/ja/site/build/npm-scripts.md
