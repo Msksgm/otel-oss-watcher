@@ -6,6 +6,7 @@ content/en/announcements/kubecon-eu.md
 content/en/announcements/kubecon-india.md
 content/en/announcements/open-observability-summit-na.md
 content/en/announcements/otel-unplugged.md
+content/en/announcements/zoom-migration-lfx.md
 content/en/api.md
 content/en/community/_index.md
 content/en/community/end-user/_index.md
