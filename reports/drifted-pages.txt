@@ -1,8 +1,10 @@
 content/ja/announcements/kubecon-japan.md
+content/ja/blog/2026/go-compile-time-instrumentation-v1/index.md
 content/ja/blog/_index.md
 content/ja/docs/collector/_index.md
 content/ja/docs/contributing/localization.md
 content/ja/docs/contributing/pr-checks.md
+content/ja/docs/languages/java/_index.md
 content/ja/docs/languages/java/sdk.md
 content/ja/docs/languages/js/benchmarks.md
 content/ja/docs/languages/python/_index.md
