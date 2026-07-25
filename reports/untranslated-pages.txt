@@ -34,7 +34,6 @@ content/en/docs/demo/services/image-provider.md
 content/en/docs/demo/services/load-generator.md
 content/en/docs/demo/services/payment.md
 content/en/docs/demo/services/product-catalog.md
-content/en/docs/demo/services/product-reviews.md
 content/en/docs/demo/services/quote.md
 content/en/docs/demo/services/react-native-app.md
 content/en/docs/demo/services/recommendation.md
@@ -156,7 +155,6 @@ content/en/docs/zero-code/java/agent/instrumentation/_index.md
 content/en/docs/zero-code/java/agent/instrumentation/http.md
 content/en/docs/zero-code/java/agent/performance.md
 content/en/docs/zero-code/java/agent/server-config.md
-content/en/docs/zero-code/java/spring-boot-starter/declarative-configuration.md
 content/en/docs/zero-code/java/spring-boot-starter/programmatic-configuration.md
 content/en/docs/zero-code/java/spring-boot-starter/sdk-configuration.md
 content/en/docs/zero-code/obi/context-propagation.md
