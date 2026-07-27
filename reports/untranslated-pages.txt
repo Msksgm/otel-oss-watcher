@@ -44,7 +44,6 @@ content/en/docs/demo/telemetry-features/manual-span-attributes.md
 content/en/docs/demo/telemetry-features/metric-coverage.md
 content/en/docs/demo/telemetry-features/trace-coverage.md
 content/en/docs/getting-started/reference-application-specification.md
-content/en/docs/guidance/reference-implementations/adobe/index.md
 content/en/docs/languages/cpp/_index.md
 content/en/docs/languages/cpp/api.md
 content/en/docs/languages/cpp/examples.md
@@ -133,7 +132,6 @@ content/en/docs/languages/swift/_index.md
 content/en/docs/languages/swift/examples.md
 content/en/docs/languages/swift/getting-started.md
 content/en/docs/languages/swift/instrumentation.md
-content/en/docs/languages/swift/libraries.md
 content/en/docs/languages/swift/registry.md
 content/en/docs/platforms/client-apps/android.md
 content/en/docs/platforms/client-apps/ios/_index.md
@@ -141,7 +139,6 @@ content/en/docs/specs/otel-config/types.md
 content/en/docs/zero-code/dotnet/custom.md
 content/en/docs/zero-code/dotnet/getting-started.md
 content/en/docs/zero-code/dotnet/nuget-packages.md
-content/en/docs/zero-code/dotnet/troubleshooting.md
 content/en/docs/zero-code/go/compile-time/_index.md
 content/en/docs/zero-code/go/compile-time/configuration.md
 content/en/docs/zero-code/go/compile-time/getting-started.md
