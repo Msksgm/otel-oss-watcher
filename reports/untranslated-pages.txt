@@ -180,7 +180,7 @@ content/en/site/features.md
 content/en/site/implementation/_index.md
 content/en/site/implementation/style-guide.md
 content/en/site/skills/_index.md
-content/en/site/skills/refresh-refcache-pr-fix.md
+content/en/site/skills/refresh-link-cache-pr-fix.md
 content/en/site/skills/update-git-submodule.md
 content/en/site/skills/update-i18n-drift-status.md
 content/en/site/skills/update-old-blog-ignores.md
