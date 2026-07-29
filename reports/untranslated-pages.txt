@@ -166,7 +166,6 @@ content/en/ecosystem/registry/_index.md
 content/en/ecosystem/registry/adding.md
 content/en/ecosystem/registry/updating.md
 content/en/ecosystem/vendors.md
-content/en/search.md
 content/en/site/_index.md
 content/en/site/build/_index.md
 content/en/site/build/announcements.md
