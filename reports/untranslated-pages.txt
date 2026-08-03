@@ -1,7 +1,4 @@
 content/en/_includes/page-drifted-msg.md
-content/en/_includes/page-not-translated-msg.md
-content/en/announcements/kubecon-asia.md
-content/en/announcements/kubecon-china.md
 content/en/announcements/kubecon-eu.md
 content/en/announcements/kubecon-india.md
 content/en/announcements/open-observability-summit-na.md

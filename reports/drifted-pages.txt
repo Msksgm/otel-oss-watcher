@@ -1,4 +1,6 @@
 content/ja/announcements/kubecon-japan.md
+content/ja/blog/2025/demystifying-auto-instrumentation.md
+content/ja/blog/2026/kubecon-eu.md
 content/ja/blog/_index.md
 content/ja/docs/collector/extend/custom-component/extension/authenticator.md
 content/ja/docs/collector/extend/custom-component/receiver.md
@@ -30,5 +32,6 @@ content/ja/docs/zero-code/obi/configure/export-data.md
 content/ja/docs/zero-code/obi/configure/metrics-histograms.md
 content/ja/docs/zero-code/obi/configure/service-discovery.md
 content/ja/docs/zero-code/obi/metrics.md
+content/ja/docs/zero-code/python/example.md
 content/ja/site/build/ci-workflows.md
 content/ja/site/build/npm-scripts.md
