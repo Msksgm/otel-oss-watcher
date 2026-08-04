@@ -16,7 +16,6 @@ content/en/community/members.md
 content/en/docs/collector/deploy/choose.md
 content/en/docs/collector/deploy/gateway.md
 content/en/docs/compatibility/migration/opencensus.md
-content/en/docs/compatibility/migration/opentracing.md
 content/en/docs/compatibility/prometheus/otlp-metrics-export.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
 content/en/docs/demo/screenshots/index.md
