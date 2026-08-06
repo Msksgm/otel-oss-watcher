@@ -5,13 +5,11 @@ content/en/announcements/open-observability-summit-na.md
 content/en/announcements/otel-unplugged.md
 content/en/announcements/zoom-migration-lfx.md
 content/en/api.md
-content/en/community/_index.md
 content/en/community/end-user/_index.md
 content/en/community/end-user/interviews-feedback.md
 content/en/community/end-user/issue-participation.md
 content/en/community/end-user/otel-in-practice.md
 content/en/community/events.md
-content/en/community/marketing-guidelines.md
 content/en/community/members.md
 content/en/docs/collector/deploy/choose.md
 content/en/docs/collector/deploy/gateway.md
@@ -127,7 +125,6 @@ content/en/docs/languages/sdk-configuration/declarative-configuration.md
 content/en/docs/languages/swift/_index.md
 content/en/docs/languages/swift/examples.md
 content/en/docs/languages/swift/getting-started.md
-content/en/docs/languages/swift/instrumentation.md
 content/en/docs/languages/swift/registry.md
 content/en/docs/platforms/client-apps/android.md
 content/en/docs/platforms/client-apps/ios/_index.md
