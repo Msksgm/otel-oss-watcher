@@ -3,6 +3,7 @@ content/ja/blog/2026/kubecon-eu.md
 content/ja/blog/_index.md
 content/ja/docs/collector/_index.md
 content/ja/docs/collector/extend/custom-component/extension/authenticator.md
+content/ja/docs/contributing/development.md
 content/ja/docs/contributing/localization.md
 content/ja/docs/contributing/pull-requests.md
 content/ja/docs/demo/services/_index.md
@@ -21,13 +22,11 @@ content/ja/docs/zero-code/dotnet/_index.md
 content/ja/docs/zero-code/java/agent/extensions.md
 content/ja/docs/zero-code/java/agent/supported-libraries.md
 content/ja/docs/zero-code/java/spring-boot-starter/declarative-configuration.md
-content/ja/docs/zero-code/java/spring-boot-starter/getting-started.md
-content/ja/docs/zero-code/java/spring-boot-starter/other-spring-autoconfig.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/obi/_index.md
 content/ja/docs/zero-code/obi/configure/export-data.md
 content/ja/docs/zero-code/obi/configure/metrics-histograms.md
 content/ja/docs/zero-code/obi/configure/service-discovery.md
 content/ja/docs/zero-code/obi/metrics.md
-content/ja/docs/zero-code/python/_index.md
 content/ja/site/build/ci-workflows.md
+content/ja/site/build/npm-scripts.md
