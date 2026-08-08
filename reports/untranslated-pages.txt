@@ -17,6 +17,7 @@ content/en/docs/compatibility/migration/opencensus.md
 content/en/docs/compatibility/prometheus/otlp-metrics-export.md
 content/en/docs/demo/feature-flags/recommendation-cache/index.md
 content/en/docs/demo/screenshots/index.md
+content/en/docs/demo/self-observability-dashboard/index.md
 content/en/docs/demo/services/ad.md
 content/en/docs/demo/services/cart/index.md
 content/en/docs/demo/services/checkout.md
