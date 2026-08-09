@@ -1,16 +1,9 @@
-content/en/_includes/page-drifted-msg.md
 content/en/announcements/kubecon-eu.md
 content/en/announcements/kubecon-india.md
 content/en/announcements/open-observability-summit-na.md
 content/en/announcements/otel-unplugged.md
-content/en/announcements/zoom-migration-lfx.md
 content/en/api.md
-content/en/community/end-user/_index.md
-content/en/community/end-user/interviews-feedback.md
-content/en/community/end-user/issue-participation.md
 content/en/community/end-user/otel-in-practice.md
-content/en/community/events.md
-content/en/community/members.md
 content/en/docs/collector/deploy/choose.md
 content/en/docs/collector/deploy/gateway.md
 content/en/docs/compatibility/migration/opencensus.md
@@ -181,5 +174,4 @@ content/en/site/testing/_index.md
 content/en/site/testing/tests/_index.md
 content/en/site/testing/tests/no-md.md
 content/en/site/testing/tests/regular.md
-content/en/status.md
 content/en/training/index.md
