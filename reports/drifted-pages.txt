@@ -1,15 +1,10 @@
 content/ja/blog/_index.md
-content/ja/docs/collector/_index.md
 content/ja/docs/concepts/signals/logs.md
 content/ja/docs/contributing/development.md
 content/ja/docs/contributing/localization.md
 content/ja/docs/demo/architecture.md
-content/ja/docs/demo/docker-deployment.md
 content/ja/docs/languages/_index.md
-content/ja/docs/languages/java/jmx.md
 content/ja/docs/languages/js/benchmarks.md
-content/ja/docs/languages/ruby/sampling.md
-content/ja/docs/platforms/kubernetes/operator/_index.md
 content/ja/docs/zero-code/java/agent/supported-libraries.md
 content/ja/docs/zero-code/java/spring-boot-starter/out-of-the-box-instrumentation.md
 content/ja/docs/zero-code/obi/_index.md
