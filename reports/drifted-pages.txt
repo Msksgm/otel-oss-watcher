@@ -1,4 +1,5 @@
 content/ja/blog/_index.md
+content/ja/docs/concepts/context-propagation/index.md
 content/ja/docs/concepts/signals/logs.md
 content/ja/docs/contributing/development.md
 content/ja/docs/contributing/localization.md
